@@ -1,17 +1,16 @@
-import Storys from "./components/Storys"
-import Sidebar from './components/Sidebar'
-import Posts from "./components/Posts"
+import Storys from "./Storys";
+import Sidebar from "./Sidebar";
+import Posts from "./Posts";
 
-export default Body 
-
-const Body = () =>{
-    return(
-        <div class="corpo">
-        <div class="esquerda">
+const Body = () => {
+  return (
+    <div class="corpo">
+      <div class="esquerda">
         <Storys />
         <Posts />
-        </div>
-       <Sidebar />
       </div>
-    )
-}
+      <Sidebar />
+    </div>
+  );
+};
+export default Body;
