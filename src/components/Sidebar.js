@@ -1,10 +1,11 @@
-import User from "./User";
-import Suggestions from "./Suggestions";
+import Usuario from "./Usuario";
+import Sugestoes from "./Sugestoes";
+
 const Sidebar = () => {
   return (
     <div class="sidebar">
-    <User />
-      <Suggestions/>
+      <Usuario/>
+      <Sugestoes />
       <div class="links">
         Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos •
         Localizações • Contas mais relevantes • Hashtags • Idioma

@@ -305,3 +305,34 @@ ion-icon {
   color: black;
 }
 
+.black {
+  color: black;
+}
+.red{
+  color: red;
+}
+.img-post{
+  position: relative;
+}
+.icon-post{
+  position: absolute;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  color: white;
+  transform: translate(-50%,-50%);scale: (0.2);
+  transition: all 0.3;
+}
+@keyframes icon-post{
+  from {
+    transform: scale(0.2);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.shadow{
+  display: none;
+}

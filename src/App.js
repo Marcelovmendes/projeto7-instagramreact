@@ -1,11 +1,11 @@
-import Body from "./components/Body";
+import Corpo from "./components/Corpo";
 import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <div class="root">
       <Navbar />
-      <Body />
+      <Corpo />
     </div>
   );
 };

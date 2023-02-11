@@ -1,16 +1,16 @@
-import Storys from "./Storys";
+import  Stories from "./Stories";
 import Sidebar from "./Sidebar";
 import Posts from "./Posts";
 
-const Body = () => {
+const Corpo = () => {
   return (
     <div class="corpo">
       <div class="esquerda">
-        <Storys />
+        <Stories />
         <Posts />
       </div>
       <Sidebar />
     </div>
   );
 };
-export default Body;
+export default Corpo;

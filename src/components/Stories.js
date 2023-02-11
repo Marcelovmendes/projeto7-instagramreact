@@ -1,4 +1,6 @@
-const Storys = () => {
+import Story from "./Story";
+
+const Stories = () => {
   let story = [
     { img: "assets/img/memeriagourmet.svg", text: "memeriagourmet" },
     { img: "assets/img/filomoderna.svg", text: "filomoderna" },
@@ -16,7 +18,7 @@ const Storys = () => {
   return (
     <div class="stories">
       {story.map((s) => (
-        <StoryItem img={s.img} title={s.text} text={s.text} />
+        <Story img={s.img} title={s.text} text={s.text} />
       ))}
       <div class="setinha">
         <ion-icon name="chevron-forward-circle"></ion-icon>
@@ -24,14 +26,4 @@ const Storys = () => {
     </div>
   );
 };
-const StoryItem = (props) => {
-  return (
-    <div class="story">
-      <div class="imagem">
-        <img src={props.img} alt={props.text} />
-      </div>
-      <div class="usuario">{props.text}</div>
-    </div>
-  );
-};
-export default Storys;
+export default Stories;

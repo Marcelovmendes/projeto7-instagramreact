@@ -1,4 +1,6 @@
-const Suggestions = () => {
+import Sugestao from "./Sugestao";
+
+const Sugestoes = () => {
   let items = [
     {
       userImg: "assets/img/smallcutecats.svg",
@@ -27,36 +29,22 @@ const Suggestions = () => {
     },
   ];
 
-  return (
+  return(
     <div class="sugestoes">
       <div class="titulo">
         Sugestões para você
         <div>Ver tudo</div>
       </div>
-      {items.map((i) => {
-        <ItemsSuggestions
+      {items.map((i) => (
+        <Sugestao
           userImg={i.userImg}
           userName={i.userName}
           status={i.status}
         />
-      })}
+      ))}
     </div>
   );
 };
 
-const ItemsSuggestions = (props) => {
-  return (
-    <div class="sugestao">
-      <div class="usuario">
-        <img src={props.userImg} alt={props.userName} />
-        <div class="texto">
-          <div class="nome">{props.userName}</div>
-          <div class="razao">{props.status}</div>
-        </div>
-      </div>
-
-      <div class="seguir">Seguir</div>
-    </div>
-  );
-};
-export default Suggestions;
+export default Sugestoes
+;
