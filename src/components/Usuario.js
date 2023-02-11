@@ -18,11 +18,11 @@ const Usuario = () => {
   };
   return (
     <div class="usuario">
-      <img onClick={clickUserImg} src={image} alt="imagem de perfil" />
+      <img data-test="profile-image" onClick={clickUserImg} src={image} alt="imagem de perfil" />
       <div class="texto">
-        <span>
+        <span data-test="name">
           <strong>{name}</strong>
-          <ion-icon onClick={clickUser} name="pencil"></ion-icon>
+          <ion-icon data-test="edit-name" onClick={clickUser} name="pencil"></ion-icon>
         </span>
       </div>
     </div>

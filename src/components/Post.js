@@ -20,7 +20,7 @@ const Post = (props) => {
 
 
   return (
-    <div class="post">
+    <div class="post" data-test="post">
       <div class="topo">
         <div class="usuario">
           <img src={props.userImg} alt={props.userText} />
@@ -33,7 +33,7 @@ const Post = (props) => {
 
       <div class="conteudo">
         <div class="icon-post"><ion-icon name="heart"></ion-icon></div>
-        <img
+        <img data-test="post-image"
           onDoubleClick={handleImageClick}
           src={props.postImg}
           alt={props.posText}
@@ -43,7 +43,7 @@ const Post = (props) => {
       <div class="fundo">
   <div class="acoes">
     <div>
-      <ion-icon
+      <ion-icon data-test="like-post"
         onClick={handleLikeClick}
         class={isLike ? "red" : "black"}
         name={isLike ? "heart" : "heart-outline"}
@@ -52,7 +52,7 @@ const Post = (props) => {
       <ion-icon name="paper-plane-outline"></ion-icon>
     </div>
     <div>
-      <ion-icon
+      <ion-icon data-test="save-post"
         onClick={() => setIsSave(!isSave)}
         name={isSave ? "bookmark" : "bookmark-outline"}
       ></ion-icon>
@@ -60,7 +60,7 @@ const Post = (props) => {
   </div>
   <div class="curtidas">
     <img src={props.likeImg} alt={props.likeTitle} />
-    <div class="texto"> 
+    <div class="texto" data-test="likes-number"> 
       Curtido por <strong>{props.likeTitle}</strong> e{" "}
       <strong>{Intl.NumberFormat('pt-BR').format(numLike)}</strong> pessoas
     </div>
