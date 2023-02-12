@@ -16,11 +16,11 @@ const Stories = () => {
   ];
 
   return (
-    <div class="stories">
+    <div className="stories">
       {story.map((s) => (
-        <Story img={s.img} title={s.text} text={s.text} />
+        <Story key={s.img} img={s.img} title={s.text} text={s.text} />
       ))}
-      <div class="setinha">
+      <div className="setinha">
         <ion-icon name="chevron-forward-circle"></ion-icon>
       </div>
     </div>

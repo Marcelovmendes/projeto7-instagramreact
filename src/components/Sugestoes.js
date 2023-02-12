@@ -29,14 +29,15 @@ const Sugestoes = () => {
     },
   ];
 
-  return(
-    <div class="sugestoes">
-      <div class="titulo">
+  return (
+    <div className="sugestoes">
+      <div className="titulo">
         Sugestões para você
         <div>Ver tudo</div>
       </div>
       {items.map((i) => (
         <Sugestao
+          key={i.userImg}
           userImg={i.userImg}
           userName={i.userName}
           status={i.status}
@@ -46,5 +47,4 @@ const Sugestoes = () => {
   );
 };
 
-export default Sugestoes
-;
+export default Sugestoes;
