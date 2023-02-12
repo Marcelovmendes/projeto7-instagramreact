@@ -43,7 +43,7 @@ const Post = (props) => {
             <ion-icon
               data-test="like-post"
               onClick={handleLikeClick}
-              className={isLike ? "red" : "black"}
+              class={isLike ? "red" : "black"}
               name={isLike ? "heart" : "heart-outline"}
             ></ion-icon>
             <ion-icon name="chatbubble-outline"></ion-icon>
